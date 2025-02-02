@@ -35,7 +35,7 @@ O projeto é totalmente responsivo e se adapta a diferentes tamanhos de tela, in
 
 ### Mobile
 
-![Mobile Layout](./images/image-product-mobile.jpg)
+![Mobile Layout](./images/mobile-version.png)
 
 ## Como Usar
 
