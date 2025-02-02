@@ -19,7 +19,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background-color: antiquewhite;
       font-family: 'Playfair Display', serif;
     }
@@ -97,12 +97,45 @@
       width: 300px;
       height: 550px;
     }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0; /* Ajusta o border-radius para a imagem no topo */
+      }
     
+      .card-component {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+      }
+
+      .small{
+        text-align: right;
+      }
+    
+      button {
+        width: 80%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="./images/image-product-desktop.jpg" alt="Perfum">
+    <picture>
+      <source srcset="./images/image-product-mobile.jpg" media="(max-width: 600px)">
+      <img src="./images/image-product-desktop.jpg" alt="Perfume">
+    </picture>
     <div class="card-component">
       <small>Perfume</small>
       <h1>Gabrielle Essence Eau De Parfum</h1>
